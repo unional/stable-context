@@ -33,7 +33,7 @@
     "husky": "^9.0.0",
     "npm-run-all2": "^6.0.0",
     "pinst": "^3.0.0",
-    "turbo": "1.12.3",
+    "turbo": "1.12.4",
     "typescript": "^5.0.4"
   },
   "packageManager": "pnpm@8.15.2"
