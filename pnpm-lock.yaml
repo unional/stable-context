@@ -30,8 +30,8 @@ importers:
         specifier: ^7.1.2
         version: 7.1.2(@typescript-eslint/eslint-plugin@5.59.1(@typescript-eslint/parser@5.59.1(eslint@9.0.0)(typescript@5.0.4))(eslint@9.0.0)(typescript@5.0.4))(eslint-config-prettier@9.0.0(eslint@9.0.0))(eslint@9.0.0)(typescript@5.0.4)
       eslint-plugin-yml:
-        specifier: ~1.14.0
-        version: 1.14.0(eslint@9.0.0)
+        specifier: ~1.15.0
+        version: 1.15.0(eslint@9.0.0)
       husky:
         specifier: ^9.0.0
         version: 9.0.1
@@ -1505,8 +1505,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-yml@1.14.0:
-    resolution: {integrity: sha512-ESUpgYPOcAYQO9czugcX5OqRvn/ydDVwGCPXY4YjPqc09rHaUVUA6IE6HLQys4rXk/S+qx3EwTd1wHCwam/OWQ==}
+  eslint-plugin-yml@1.15.0:
+    resolution: {integrity: sha512-leC8APYVOsKyWUlvRwVhewytK5wS70BfMqIaUplFstRfzCoVp0YoEroV4cUEvQrBj93tQ3M9LcjO/ewr6D4kjA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -2828,11 +2828,6 @@ packages:
 
   semver@7.5.0:
     resolution: {integrity: sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
-  semver@7.5.4:
-    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4446,7 +4441,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.59.1(typescript@5.0.4)
       eslint: 9.0.0
       eslint-scope: 5.1.1
-      semver: 7.5.4
+      semver: 7.6.0
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5081,7 +5076,7 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-yml@1.14.0(eslint@9.0.0):
+  eslint-plugin-yml@1.15.0(eslint@9.0.0):
     dependencies:
       debug: 4.3.4
       eslint: 9.0.0
@@ -6585,10 +6580,6 @@ snapshots:
   semver@6.3.0: {}
 
   semver@7.5.0:
-    dependencies:
-      lru-cache: 6.0.0
-
-  semver@7.5.4:
     dependencies:
       lru-cache: 6.0.0
 
