@@ -30,8 +30,8 @@ importers:
         specifier: ^7.1.2
         version: 7.2.0(@typescript-eslint/eslint-plugin@5.59.1(@typescript-eslint/parser@6.21.0(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3))(eslint-config-prettier@10.1.2(eslint@9.25.0(jiti@2.4.2)))(eslint@9.25.0(jiti@2.4.2))(typescript@5.8.3)
       eslint-plugin-yml:
-        specifier: ~1.17.0
-        version: 1.17.0(eslint@9.25.0(jiti@2.4.2))
+        specifier: ~1.18.0
+        version: 1.18.0(eslint@9.25.0(jiti@2.4.2))
       husky:
         specifier: ^9.0.0
         version: 9.1.7
@@ -1561,8 +1561,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-yml@1.17.0:
-    resolution: {integrity: sha512-Q3LXFRnNpGYAK/PM0BY1Xs0IY1xTLfM0kC986nNQkx1l8tOGz+YS50N6wXkAJkrBpeUN9OxEMB7QJ+9MTDAqIQ==}
+  eslint-plugin-yml@1.18.0:
+    resolution: {integrity: sha512-9NtbhHRN2NJa/s3uHchO3qVVZw0vyOIvWlXWGaKCr/6l3Go62wsvJK5byiI6ZoYztDsow4GnS69BZD3GnqH3hA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -3748,7 +3748,7 @@ snapshots:
   '@eslint/config-array@0.20.0':
     dependencies:
       '@eslint/object-schema': 2.1.6
-      debug: 4.3.4
+      debug: 4.4.0
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -3762,7 +3762,7 @@ snapshots:
   '@eslint/eslintrc@3.3.1':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.4
+      debug: 4.4.0
       espree: 10.3.0
       globals: 14.0.0
       ignore: 5.2.4
@@ -4902,9 +4902,9 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-yml@1.17.0(eslint@9.25.0(jiti@2.4.2)):
+  eslint-plugin-yml@1.18.0(eslint@9.25.0(jiti@2.4.2)):
     dependencies:
-      debug: 4.3.4
+      debug: 4.4.0
       escape-string-regexp: 4.0.0
       eslint: 9.25.0(jiti@2.4.2)
       eslint-compat-utils: 0.6.4(eslint@9.25.0(jiti@2.4.2))
