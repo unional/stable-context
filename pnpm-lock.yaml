@@ -55,7 +55,7 @@ importers:
         version: 30.0.0
       '@repobuddy/jest':
         specifier: ^5.0.0
-        version: 5.0.0(@swc/jest@0.2.36(@swc/core@1.4.11))(jest-watch-suspend@1.1.2(jest@30.0.0(@types/node@22.14.1)))(jest-watch-toggle-config-2@2.1.0(jest@30.0.0(@types/node@22.14.1)))(jest-watch-typeahead@2.2.2(jest@30.0.0(@types/node@22.14.1)))(jest@30.0.0(@types/node@22.14.1))(ts-jest@29.3.2(@babel/core@7.27.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.27.4))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3))
+        version: 5.0.0(@swc/jest@0.2.36(@swc/core@1.4.11))(jest-watch-suspend@1.1.2(jest@30.0.0(@types/node@22.14.1)))(jest-watch-toggle-config-2@2.1.0(jest@30.0.0(@types/node@22.14.1)))(jest-watch-typeahead@3.0.1(jest@30.0.0(@types/node@22.14.1)))(jest@30.0.0(@types/node@22.14.1))(ts-jest@29.3.2(@babel/core@7.26.10)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.10))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3))
       '@repobuddy/typescript':
         specifier: ^2.0.0
         version: 2.1.0
@@ -81,8 +81,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0(jest@30.0.0(@types/node@22.14.1))
       jest-watch-typeahead:
-        specifier: ^2.2.2
-        version: 2.2.2(jest@30.0.0(@types/node@22.14.1))
+        specifier: ^3.0.0
+        version: 3.0.1(jest@30.0.0(@types/node@22.14.1))
       npm-run-all2:
         specifier: ^8.0.0
         version: 8.0.1
@@ -97,7 +97,7 @@ importers:
         version: 11.2.0
       ts-jest:
         specifier: ^29.1.0
-        version: 29.3.2(@babel/core@7.27.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.27.4))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3)
+        version: 29.3.2(@babel/core@7.26.10)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.10))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3)
       typescript:
         specifier: ^5.0.4
         version: 5.8.3
@@ -711,10 +711,6 @@ packages:
     resolution: {integrity: sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==}
     engines: {node: '>=8'}
 
-  '@jest/console@29.7.0':
-    resolution: {integrity: sha512-5Ni4CU7XHQi32IJ398EEP4RrB8eV09sXP2ROqD4bksHrnTree52PsxvX8tpL8LvTZ3pFzXyPbNQReSN41CAhOg==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-
   '@jest/console@30.0.0':
     resolution: {integrity: sha512-vfpJap6JZQ3I8sUN8dsFqNAKJYO4KIGxkcB+3Fw7Q/BJiWY5HwtMMiuT1oP0avsiDhjE/TCLaDgbGfHwDdBVeg==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
@@ -788,10 +784,6 @@ packages:
   '@jest/source-map@30.0.0':
     resolution: {integrity: sha512-oYBJ4d/NF4ZY3/7iq1VaeoERHRvlwKtrGClgescaXMIa1mmb+vfJd0xMgbW9yrI80IUA7qGbxpBWxlITrHkWoA==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
-
-  '@jest/test-result@29.5.0':
-    resolution: {integrity: sha512-fGl4rfitnbfLsrfx1uUpDEESS7zM8JdgZgOCQuxQvL1Sn/I6ijeAVQWGfXI9zb1i9Mzo495cIpVZhA0yr60PkQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
   '@jest/test-result@30.0.0':
     resolution: {integrity: sha512-685zco9HdgBaaWiB9T4xjLtBuN0Q795wgaQPpmuAeZPHwHZSoKFAUnozUtU+ongfi4l5VCz8AclOE5LAQdyjxQ==}
@@ -1324,17 +1316,13 @@ packages:
     resolution: {integrity: sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==}
     engines: {node: '>=8'}
 
-  ansi-escapes@6.2.0:
-    resolution: {integrity: sha512-kzRaCqXnpzWs+3z5ABPQiVke+iq0KXkHo8xiWV4RPTi5Yli0l97BEQuhXV1s7+aSU/fu1kUuxgS4MsQ0fRuygw==}
-    engines: {node: '>=14.16'}
+  ansi-escapes@7.0.0:
+    resolution: {integrity: sha512-GdYO7a61mR0fOlAsvC9/rIHf7L96sBc6dEWzeOu+KAea5bZyQRPIpojrVoI4AXGJS/ycu/fBTdLrUkA4ODrvjw==}
+    engines: {node: '>=18'}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
-
-  ansi-regex@6.0.1:
-    resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
-    engines: {node: '>=12'}
 
   ansi-regex@6.1.0:
     resolution: {integrity: sha512-7HSX4QQb4CspciLpVFwyRe79O3xsIZDDLER21kERQ71oaPodF8jL725AgJMFAYbooIqolJoRLuM81SpeUkpkvA==}
@@ -1491,10 +1479,6 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.2.0:
-    resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-
   chalk@5.4.1:
     resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
@@ -1502,10 +1486,6 @@ packages:
   char-regex@1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
     engines: {node: '>=10'}
-
-  char-regex@2.0.1:
-    resolution: {integrity: sha512-oSvEeo6ZUD7NepqAat3RqoucZ5SeqLJgOvVIwkafu6IP3V0pO38s/ypdVUmDDK6qIIHNlYHJAKX9E7R7HoKElw==}
-    engines: {node: '>=12.20'}
 
   chardet@0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
@@ -1543,9 +1523,6 @@ packages:
   co@4.6.0:
     resolution: {integrity: sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==}
     engines: {iojs: '>= 1.0.0', node: '>= 0.12.0'}
-
-  collect-v8-coverage@1.0.1:
-    resolution: {integrity: sha512-iBPtljfCNcTKNAto0KEtDfZ3qzjJvqE3aTGZsbhjSBlorqpXJlaWWtPO35D+ZImoC3KWejX64o+yPGxhWSTzfg==}
 
   collect-v8-coverage@1.0.2:
     resolution: {integrity: sha512-lHl4d5/ONEbLlJvaJNtsF/Lz+WvB07u2ycqTYbdrq7UypDXailES4valYb2eWiJFxZlVmpGekfqoxQhzyFdT4Q==}
@@ -1722,6 +1699,10 @@ packages:
   env-paths@2.2.1:
     resolution: {integrity: sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==}
     engines: {node: '>=6'}
+
+  environment@1.1.0:
+    resolution: {integrity: sha512-xUtoPkMggbz0MPyPiIWr1Kp4aeWJjDZ6SMvURhimjdZgsRuDplF5/s9hcgGhyXMhs+6vpnuoiZ2kFiu3FMnS8Q==}
+    engines: {node: '>=18'}
 
   error-ex@1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
@@ -2314,10 +2295,6 @@ packages:
     resolution: {integrity: sha512-m5mrunqopkrqwG1mMdJxe1J4uGmS9AHHKYUmoxeQOxBcLjEvirIrIDwuKmUYrecPHVB/PUBpXs2gPoeA2FSSLQ==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
 
-  jest-message-util@29.7.0:
-    resolution: {integrity: sha512-GBEV4GRADeP+qtB2+6u61stea8mGcOT4mCtrYISZwfu9/ISHFJ/5zOMXYbpBE9RsS5+Gb63DW4FgmnKJ79Kf6w==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-
   jest-message-util@30.0.0:
     resolution: {integrity: sha512-pV3qcrb4utEsa/U7UI2VayNzSDQcmCllBZLSoIucrESRu0geKThFZOjjh0kACDJFJRAQwsK7GVsmS6SpEceD8w==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
@@ -2334,10 +2311,6 @@ packages:
     peerDependenciesMeta:
       jest-resolve:
         optional: true
-
-  jest-regex-util@29.4.3:
-    resolution: {integrity: sha512-O4FglZaMmWXbGHSQInfXewIsd1LMn9p3ZXB/6r4FOkyhX2/iP/soMG98jGvk/A3HAN78+5VWcBGO0BJAPRh4kg==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
   jest-regex-util@29.6.3:
     resolution: {integrity: sha512-KJJBsRCyyLNWCNBOvZyRDnAIfUiRJ8v+hOBQYGn8gDyF3UegwiP4gwRR3/SDa42g1YbVycTidUF3rKjyLFDWbg==}
@@ -2402,15 +2375,11 @@ packages:
     peerDependencies:
       jest: '>= 23.4.1'
 
-  jest-watch-typeahead@2.2.2:
-    resolution: {integrity: sha512-+QgOFW4o5Xlgd6jGS5X37i08tuuXNW8X0CV9WNFi+3n8ExCIP+E1melYhvYLjv5fE6D0yyzk74vsSO8I6GqtvQ==}
-    engines: {node: ^14.17.0 || ^16.10.0 || >=18.0.0}
+  jest-watch-typeahead@3.0.1:
+    resolution: {integrity: sha512-SFmHcvdueTswZlVhPCWfLXMazvwZlA2UZTrcE7MC3NwEVeWvEcOx6HUe+igMbnmA6qowuBSW4in8iC6J2EYsgQ==}
+    engines: {node: '>=18.0.0'}
     peerDependencies:
-      jest: ^27.0.0 || ^28.0.0 || ^29.0.0
-
-  jest-watcher@29.5.0:
-    resolution: {integrity: sha512-KmTojKcapuqYrKDpRwfqcQ3zjMlwu27SYext9pt4GlF5FUgB+7XE1mcCnSm6a4uUpFyQIkb6ZhzZvHl+jiBCiA==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+      jest: ^30.0.0
 
   jest-watcher@30.0.0:
     resolution: {integrity: sha512-fbAkojcyS53bOL/B7XYhahORq9cIaPwOgd/p9qW/hybbC8l6CzxfWJJxjlPBAIVN8dRipLR0zdhpGQdam+YBtw==}
@@ -3095,9 +3064,9 @@ packages:
     resolution: {integrity: sha512-+l6rNN5fYHNhZZy41RXsYptCjA2Igmq4EG7kZAYFQI1E1VTXarr6ZPXBg6eq7Y6eK4FEhY6AJlyuFIb/v/S0VQ==}
     engines: {node: '>=10'}
 
-  string-length@5.0.1:
-    resolution: {integrity: sha512-9Ep08KAMUn0OadnVaBuRdE2l615CQ508kr0XMadjClfYpdCyvrbFp6Taebo8yyxokQ4viUd/xPPUA4FGgUa0ow==}
-    engines: {node: '>=12.20'}
+  string-length@6.0.0:
+    resolution: {integrity: sha512-1U361pxZHEQ+FeSjzqRpV+cu2vTzYeWeafXFLykiFlv4Vc0n3njgU8HrMbyik5uwm77naWMuVG8fhEF+Ovb1Kg==}
+    engines: {node: '>=16'}
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -3110,10 +3079,6 @@ packages:
   strip-ansi@6.0.1:
     resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
     engines: {node: '>=8'}
-
-  strip-ansi@7.0.1:
-    resolution: {integrity: sha512-cXNxvT8dFNRVfhVME3JAe98mkXDYN2O1l7jmcwMnOslDeESg1rF/OZMtK0nRAhiari1unG5cD4jG3rapUAkLbw==}
-    engines: {node: '>=12'}
 
   strip-ansi@7.1.0:
     resolution: {integrity: sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==}
@@ -3298,10 +3263,6 @@ packages:
   type-fest@0.8.1:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
-
-  type-fest@3.8.0:
-    resolution: {integrity: sha512-FVNSzGQz9Th+/9R6Lvv7WIAkstylfHN2/JYxkyhhmKFYh9At2DST8t6L6Lref9eYO8PXFTfG9Sg1Agg0K3vq3Q==}
-    engines: {node: '>=14.16'}
 
   type-fest@4.40.0:
     resolution: {integrity: sha512-ABHZ2/tS2JkvH1PEjxFDTUWC8dB5OsIGZP4IFLhR293GqT5Y5qB1WwL2kMPYhQW9DVgVD8Hd7I8gjwPIf5GFkw==}
@@ -3629,35 +3590,77 @@ snapshots:
     dependencies:
       '@babel/types': 7.27.6
 
+  '@babel/plugin-syntax-async-generators@7.8.4(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
+
   '@babel/plugin-syntax-async-generators@7.8.4(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
+
+  '@babel/plugin-syntax-bigint@7.8.3(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
 
   '@babel/plugin-syntax-bigint@7.8.3(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
 
+  '@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
+
   '@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
+
+  '@babel/plugin-syntax-class-static-block@7.14.5(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
 
   '@babel/plugin-syntax-class-static-block@7.14.5(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
 
+  '@babel/plugin-syntax-import-attributes@7.26.0(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
+
   '@babel/plugin-syntax-import-attributes@7.26.0(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
 
+  '@babel/plugin-syntax-import-meta@7.10.4(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
+
   '@babel/plugin-syntax-import-meta@7.10.4(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
+
+  '@babel/plugin-syntax-json-strings@7.8.3(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
 
   '@babel/plugin-syntax-json-strings@7.8.3(@babel/core@7.27.4)':
     dependencies:
@@ -3669,40 +3672,88 @@ snapshots:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.27.1
 
+  '@babel/plugin-syntax-logical-assignment-operators@7.10.4(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
+
   '@babel/plugin-syntax-logical-assignment-operators@7.10.4(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
+
+  '@babel/plugin-syntax-nullish-coalescing-operator@7.8.3(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
 
   '@babel/plugin-syntax-nullish-coalescing-operator@7.8.3(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
 
+  '@babel/plugin-syntax-numeric-separator@7.10.4(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
+
   '@babel/plugin-syntax-numeric-separator@7.10.4(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
+
+  '@babel/plugin-syntax-object-rest-spread@7.8.3(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
 
   '@babel/plugin-syntax-object-rest-spread@7.8.3(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
 
+  '@babel/plugin-syntax-optional-catch-binding@7.8.3(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
+
   '@babel/plugin-syntax-optional-catch-binding@7.8.3(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
+
+  '@babel/plugin-syntax-optional-chaining@7.8.3(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
 
   '@babel/plugin-syntax-optional-chaining@7.8.3(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
 
+  '@babel/plugin-syntax-private-property-in-object@7.14.5(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
+
   '@babel/plugin-syntax-private-property-in-object@7.14.5(@babel/core@7.27.4)':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/helper-plugin-utils': 7.26.5
+
+  '@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@7.26.10)':
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/helper-plugin-utils': 7.26.5
+    optional: true
 
   '@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@7.27.4)':
     dependencies:
@@ -4190,15 +4241,6 @@ snapshots:
 
   '@istanbuljs/schema@0.1.3': {}
 
-  '@jest/console@29.7.0':
-    dependencies:
-      '@jest/types': 29.6.3
-      '@types/node': 22.14.1
-      chalk: 4.1.2
-      jest-message-util: 29.7.0
-      jest-util: 29.7.0
-      slash: 3.0.0
-
   '@jest/console@30.0.0':
     dependencies:
       '@jest/types': 30.0.0
@@ -4342,13 +4384,6 @@ snapshots:
       callsites: 3.1.0
       graceful-fs: 4.2.11
 
-  '@jest/test-result@29.5.0':
-    dependencies:
-      '@jest/console': 29.7.0
-      '@jest/types': 29.6.3
-      '@types/istanbul-lib-coverage': 2.0.6
-      collect-v8-coverage: 1.0.1
-
   '@jest/test-result@30.0.0':
     dependencies:
       '@jest/console': 30.0.0
@@ -4365,7 +4400,7 @@ snapshots:
 
   '@jest/transform@29.7.0':
     dependencies:
-      '@babel/core': 7.26.10
+      '@babel/core': 7.27.4
       '@jest/types': 29.6.3
       '@jridgewell/trace-mapping': 0.3.25
       babel-plugin-istanbul: 6.1.1
@@ -4484,7 +4519,7 @@ snapshots:
 
   '@pkgr/core@0.2.7': {}
 
-  '@repobuddy/jest@5.0.0(@swc/jest@0.2.36(@swc/core@1.4.11))(jest-watch-suspend@1.1.2(jest@30.0.0(@types/node@22.14.1)))(jest-watch-toggle-config-2@2.1.0(jest@30.0.0(@types/node@22.14.1)))(jest-watch-typeahead@2.2.2(jest@30.0.0(@types/node@22.14.1)))(jest@30.0.0(@types/node@22.14.1))(ts-jest@29.3.2(@babel/core@7.27.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.27.4))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3))':
+  '@repobuddy/jest@5.0.0(@swc/jest@0.2.36(@swc/core@1.4.11))(jest-watch-suspend@1.1.2(jest@30.0.0(@types/node@22.14.1)))(jest-watch-toggle-config-2@2.1.0(jest@30.0.0(@types/node@22.14.1)))(jest-watch-typeahead@3.0.1(jest@30.0.0(@types/node@22.14.1)))(jest@30.0.0(@types/node@22.14.1))(ts-jest@29.3.2(@babel/core@7.26.10)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.10))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3))':
     dependencies:
       '@swc/jest': 0.2.36(@swc/core@1.4.11)
       jest: 30.0.0(@types/node@22.14.1)
@@ -4496,8 +4531,8 @@ snapshots:
     optionalDependencies:
       jest-watch-suspend: 1.1.2(jest@30.0.0(@types/node@22.14.1))
       jest-watch-toggle-config-2: 2.1.0(jest@30.0.0(@types/node@22.14.1))
-      jest-watch-typeahead: 2.2.2(jest@30.0.0(@types/node@22.14.1))
-      ts-jest: 29.3.2(@babel/core@7.27.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.27.4))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3)
+      jest-watch-typeahead: 3.0.1(jest@30.0.0(@types/node@22.14.1))
+      ts-jest: 29.3.2(@babel/core@7.26.10)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.10))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3)
 
   '@repobuddy/typescript@2.1.0':
     dependencies:
@@ -4682,7 +4717,7 @@ snapshots:
       grapheme-splitter: 1.0.4
       ignore: 5.3.2
       natural-compare-lite: 1.4.0
-      semver: 7.7.1
+      semver: 7.7.2
       tsutils: 3.21.0(typescript@5.8.3)
     optionalDependencies:
       typescript: 5.8.3
@@ -4750,7 +4785,7 @@ snapshots:
       debug: 4.4.0
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.7.1
+      semver: 7.7.2
       tsutils: 3.21.0(typescript@5.8.3)
     optionalDependencies:
       typescript: 5.8.3
@@ -4796,7 +4831,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.59.1(typescript@5.8.3)
       eslint: 9.25.0(jiti@2.4.2)
       eslint-scope: 5.1.1
-      semver: 7.7.1
+      semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -4949,13 +4984,11 @@ snapshots:
     dependencies:
       type-fest: 0.21.3
 
-  ansi-escapes@6.2.0:
+  ansi-escapes@7.0.0:
     dependencies:
-      type-fest: 3.8.0
+      environment: 1.1.0
 
   ansi-regex@5.0.1: {}
-
-  ansi-regex@6.0.1: {}
 
   ansi-regex@6.1.0: {}
 
@@ -4992,13 +5025,13 @@ snapshots:
 
   async@3.2.6: {}
 
-  babel-jest@29.7.0(@babel/core@7.27.4):
+  babel-jest@29.7.0(@babel/core@7.26.10):
     dependencies:
-      '@babel/core': 7.27.4
+      '@babel/core': 7.26.10
       '@jest/transform': 29.7.0
       '@types/babel__core': 7.20.5
       babel-plugin-istanbul: 6.1.1
-      babel-preset-jest: 29.6.3(@babel/core@7.27.4)
+      babel-preset-jest: 29.6.3(@babel/core@7.26.10)
       chalk: 4.1.2
       graceful-fs: 4.2.11
       slash: 3.0.0
@@ -5021,7 +5054,7 @@ snapshots:
 
   babel-plugin-istanbul@6.1.1:
     dependencies:
-      '@babel/helper-plugin-utils': 7.26.5
+      '@babel/helper-plugin-utils': 7.27.1
       '@istanbuljs/load-nyc-config': 1.1.0
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-instrument: 5.2.1
@@ -5042,8 +5075,8 @@ snapshots:
 
   babel-plugin-jest-hoist@29.6.3:
     dependencies:
-      '@babel/template': 7.27.0
-      '@babel/types': 7.27.0
+      '@babel/template': 7.27.2
+      '@babel/types': 7.27.6
       '@types/babel__core': 7.20.5
       '@types/babel__traverse': 7.20.7
     optional: true
@@ -5053,6 +5086,26 @@ snapshots:
       '@babel/template': 7.27.2
       '@babel/types': 7.27.6
       '@types/babel__core': 7.20.5
+
+  babel-preset-current-node-syntax@1.1.0(@babel/core@7.26.10):
+    dependencies:
+      '@babel/core': 7.26.10
+      '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.26.10)
+      '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.26.10)
+      '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.26.10)
+      '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.26.10)
+      '@babel/plugin-syntax-import-attributes': 7.26.0(@babel/core@7.26.10)
+      '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.26.10)
+      '@babel/plugin-syntax-json-strings': 7.8.3(@babel/core@7.26.10)
+      '@babel/plugin-syntax-logical-assignment-operators': 7.10.4(@babel/core@7.26.10)
+      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3(@babel/core@7.26.10)
+      '@babel/plugin-syntax-numeric-separator': 7.10.4(@babel/core@7.26.10)
+      '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.26.10)
+      '@babel/plugin-syntax-optional-catch-binding': 7.8.3(@babel/core@7.26.10)
+      '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.26.10)
+      '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.26.10)
+      '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.26.10)
+    optional: true
 
   babel-preset-current-node-syntax@1.1.0(@babel/core@7.27.4):
     dependencies:
@@ -5073,11 +5126,11 @@ snapshots:
       '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.27.4)
       '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.27.4)
 
-  babel-preset-jest@29.6.3(@babel/core@7.27.4):
+  babel-preset-jest@29.6.3(@babel/core@7.26.10):
     dependencies:
-      '@babel/core': 7.27.4
+      '@babel/core': 7.26.10
       babel-plugin-jest-hoist: 29.6.3
-      babel-preset-current-node-syntax: 1.1.0(@babel/core@7.27.4)
+      babel-preset-current-node-syntax: 1.1.0(@babel/core@7.26.10)
     optional: true
 
   babel-preset-jest@30.0.0(@babel/core@7.27.4):
@@ -5145,13 +5198,9 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chalk@5.2.0: {}
-
   chalk@5.4.1: {}
 
   char-regex@1.0.2: {}
-
-  char-regex@2.0.1: {}
 
   chardet@0.7.0: {}
 
@@ -5195,8 +5244,6 @@ snapshots:
       wrap-ansi: 7.0.0
 
   co@4.6.0: {}
-
-  collect-v8-coverage@1.0.1: {}
 
   collect-v8-coverage@1.0.2: {}
 
@@ -5362,6 +5409,8 @@ snapshots:
   entities@4.5.0: {}
 
   env-paths@2.2.1: {}
+
+  environment@1.1.0: {}
 
   error-ex@1.3.2:
     dependencies:
@@ -5885,8 +5934,8 @@ snapshots:
 
   istanbul-lib-instrument@5.2.1:
     dependencies:
-      '@babel/core': 7.26.10
-      '@babel/parser': 7.27.0
+      '@babel/core': 7.27.4
+      '@babel/parser': 7.27.5
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
       semver: 6.3.1
@@ -6099,18 +6148,6 @@ snapshots:
       jest-diff: 30.0.0
       pretty-format: 30.0.0
 
-  jest-message-util@29.7.0:
-    dependencies:
-      '@babel/code-frame': 7.26.2
-      '@jest/types': 29.6.3
-      '@types/stack-utils': 2.0.3
-      chalk: 4.1.2
-      graceful-fs: 4.2.11
-      micromatch: 4.0.8
-      pretty-format: 29.7.0
-      slash: 3.0.0
-      stack-utils: 2.0.6
-
   jest-message-util@30.0.0:
     dependencies:
       '@babel/code-frame': 7.27.1
@@ -6136,8 +6173,6 @@ snapshots:
   jest-pnp-resolver@1.2.3(jest-resolve@30.0.0):
     optionalDependencies:
       jest-resolve: 30.0.0
-
-  jest-regex-util@29.4.3: {}
 
   jest-regex-util@29.6.3: {}
 
@@ -6309,27 +6344,16 @@ snapshots:
       chalk: 4.1.2
       jest: 30.0.0(@types/node@22.14.1)
 
-  jest-watch-typeahead@2.2.2(jest@30.0.0(@types/node@22.14.1)):
+  jest-watch-typeahead@3.0.1(jest@30.0.0(@types/node@22.14.1)):
     dependencies:
-      ansi-escapes: 6.2.0
-      chalk: 5.2.0
+      ansi-escapes: 7.0.0
+      chalk: 5.4.1
       jest: 30.0.0(@types/node@22.14.1)
-      jest-regex-util: 29.4.3
-      jest-watcher: 29.5.0
+      jest-regex-util: 30.0.0
+      jest-watcher: 30.0.0
       slash: 5.0.0
-      string-length: 5.0.1
-      strip-ansi: 7.0.1
-
-  jest-watcher@29.5.0:
-    dependencies:
-      '@jest/test-result': 29.5.0
-      '@jest/types': 29.6.3
-      '@types/node': 18.16.0
-      ansi-escapes: 4.3.2
-      chalk: 4.1.2
-      emittery: 0.13.1
-      jest-util: 29.5.0
-      string-length: 4.0.2
+      string-length: 6.0.0
+      strip-ansi: 7.1.0
 
   jest-watcher@30.0.0:
     dependencies:
@@ -6935,10 +6959,9 @@ snapshots:
       char-regex: 1.0.2
       strip-ansi: 6.0.1
 
-  string-length@5.0.1:
+  string-length@6.0.0:
     dependencies:
-      char-regex: 2.0.1
-      strip-ansi: 7.0.1
+      strip-ansi: 7.1.0
 
   string-width@4.2.3:
     dependencies:
@@ -6955,10 +6978,6 @@ snapshots:
   strip-ansi@6.0.1:
     dependencies:
       ansi-regex: 5.0.1
-
-  strip-ansi@7.0.1:
-    dependencies:
-      ansi-regex: 6.0.1
 
   strip-ansi@7.1.0:
     dependencies:
@@ -7038,7 +7057,7 @@ snapshots:
     dependencies:
       typescript: 5.8.3
 
-  ts-jest@29.3.2(@babel/core@7.27.4)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.27.4))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3):
+  ts-jest@29.3.2(@babel/core@7.26.10)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.10))(jest@30.0.0(@types/node@22.14.1))(typescript@5.8.3):
     dependencies:
       bs-logger: 0.2.6
       ejs: 3.1.10
@@ -7053,10 +7072,10 @@ snapshots:
       typescript: 5.8.3
       yargs-parser: 21.1.1
     optionalDependencies:
-      '@babel/core': 7.27.4
+      '@babel/core': 7.26.10
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      babel-jest: 29.7.0(@babel/core@7.27.4)
+      babel-jest: 29.7.0(@babel/core@7.26.10)
 
   tslib@1.14.1: {}
 
@@ -7105,8 +7124,6 @@ snapshots:
   type-fest@0.6.0: {}
 
   type-fest@0.8.1: {}
-
-  type-fest@3.8.0: {}
 
   type-fest@4.40.0: {}
 
