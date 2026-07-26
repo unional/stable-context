@@ -63,7 +63,7 @@
     "@jest/globals": "^30.0.0",
     "@repobuddy/jest": "^5.0.0",
     "@repobuddy/typescript": "^2.0.0",
-    "@size-limit/preset-small-lib": "~12.1.0",
+    "@size-limit/preset-small-lib": "~13.0.0",
     "cross-env": "^10.0.0",
     "depcheck": "~1.4.3",
     "jest": "^30.0.0",
@@ -74,7 +74,7 @@
     "npm-run-all2": "^9.0.0",
     "repobuddy": "^1.0.1",
     "rimraf": "~6.1.0",
-    "size-limit": "~12.1.0",
+    "size-limit": "~13.0.0",
     "ts-jest": "^29.1.0",
     "typescript": "^7.0.0"
   }
