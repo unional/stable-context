@@ -1,11 +1,5 @@
 {
-	"cSpell.words": [
-		"depcheckrc",
-		"pinst",
-		"repobuddy",
-		"Snyk",
-		"tsbuddy",
-		"tsbuildinfo",
-		"turborepo"
-	]
+	"cSpell.words": ["depcheckrc", "tsbuildinfo", "tsdown", "turborepo", "unbundle", "vitest"],
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": { "source.fixAll.biome": "explicit" }
 }
