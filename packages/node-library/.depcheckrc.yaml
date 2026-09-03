@@ -1,0 +1,5 @@
+ignores:
+  # Used by `pnpm clean` / `pnpm nuke`, which depcheck does not read.
+  - rimraf
+  # Loaded by name through vitest's `coverage.provider: 'v8'`.
+  - '@vitest/coverage-v8'

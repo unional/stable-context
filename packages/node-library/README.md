@@ -24,15 +24,11 @@ It is a dual-package (CJS/ESM) library.
 It uses the following:
 
 - [TypeScript](https://www.typescriptlang.org/)
-  - [@repobuddy/typescript](https://github.com/repobuddy/repobuddy/blob/main/packages/typescript/README.md)
-- [Jest](https://jestjs.io/)
-  - [@repobuddy/jest](https://github.com/repobuddy/repobuddy/blob/main/packages/jest/README.md)
-- [ESLint](https://eslint.org/)
-  - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#readme)
-  - [eslint-plugin-harmony](https://github.com/unional/eslint-plugin-harmony)
-  - [eslint-plugin-yml](https://ota-meshi.github.io/eslint-plugin-yml/)
+- [tsdown](https://tsdown.dev/) for the CJS/ESM build
+- [vitest](https://vitest.dev/) for tests and coverage
+- [biome](https://biomejs.dev/) for lint and format
+  - [@repobuddy/biome](https://github.com/repobuddy/repobuddy/blob/main/packages/biome/README.md)
 - [depcheck](https://github.com/depcheck/depcheck#readme)
-- [size-limit](https://github.com/ai/size-limit#readme)
 
 ## Install
 
