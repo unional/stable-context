@@ -39,7 +39,7 @@
 	"files": [
 		"cjs",
 		"esm",
-		"ts",
+		"src",
 		"!**/*.{spec,unit,test,accept,integrate,system,pref,stress}.*"
 	],
 	"scripts": {

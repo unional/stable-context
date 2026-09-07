@@ -12,7 +12,7 @@ import { defineConfig } from 'tsdown'
  */
 export default defineConfig([
 	{
-		entry: ['ts/index.ts'],
+		entry: ['src/index.ts'],
 		format: 'cjs',
 		outDir: 'cjs',
 		platform: 'node',
@@ -28,7 +28,7 @@ export default defineConfig([
 		}
 	},
 	{
-		entry: ['ts/**/*.ts', '!ts/**/*.spec.ts'],
+		entry: ['src/**/*.ts', '!src/**/*.spec.ts'],
 		format: 'esm',
 		outDir: 'esm',
 		platform: 'node',
